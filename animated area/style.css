@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: plum;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://play-lh.googleusercontent.com/VTAbUwMLXi4P23jBzEHsSdRV_nJh3NJTn46xGcD1CuCJ4lOLrFTpbd0GCMRl3Gr2gtQ");
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: darken;
+  }
+.split.left h1{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: palegreen;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://icdn.ensonhaber.com/crop/703x395-85/resimler/diger//kok/2022/02/09/samsung-galaxy-s22_7273.jpg");
+    background-size: cover;
+    mix-blend-mode: darken;
+}
+.split.right h1{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+.active-left .left {
+    width: 75%;
+  }
+  
+  .active-left .right {
+    width: 25%;
+  }
+  
+  .active-right .left {
+    width: 25%;
+  }
+  
+  .active-right .right {
+    width: 75%;
+  }
+  
+  .left,
+  .right {
+    transition: width 2s ease-in-out;
+  }

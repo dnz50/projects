@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel a{
+    position: absolute;
+    bottom: 30px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    left: 50%;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+    /* object-fit: fill; */
+    background-size: cover;
+    background-position: center;
+}
+.panel.active a{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+
+}
